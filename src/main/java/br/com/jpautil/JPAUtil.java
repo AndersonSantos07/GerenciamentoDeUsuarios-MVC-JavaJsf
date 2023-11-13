@@ -10,7 +10,7 @@ public class JPAUtil {
 
 	static {
 		if (factory == null) {
-			factory = Persistence.createEntityManagerFactory("meuterceiroprojetojsf");
+			factory = Persistence.createEntityManagerFactory("testetecnico");
 		}
 	}
 

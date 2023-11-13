@@ -26,9 +26,8 @@ public class EditarUsuarioBean implements Serializable {
 	}
 
 	public String carregarUsuarioParaEdicao(Long id) {
-		System.out.println("Carregando usuário para edição. ID: " + id);
+
 		usuario = daoGeneric.buscarPorId(Usuario.class, id);
-		System.out.println("Dados do usuário carregados: " + usuario);
 
 		return "editarUsuario?faces-redirect=true";
 	}
