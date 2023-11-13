@@ -1,3 +1,18 @@
+# Instruções para Executar o Projeto de Gerenciamento de Usuários - JavaJSF
+
+Este repositório contém um projeto de gerenciamento de informações de usuários desenvolvido em Java, Hibernate, JPA, PostgreSQL, JSF e PrimeFaces. A seguir, são apresentadas as instruções para configurar e executar o projeto em seu computador.
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
+
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html)
+- [Apache Maven](https://maven.apache.org/)
+- [PostgreSQL](https://www.postgresql.org/download/)
+- [IDE Java, como Eclipse ou IntelliJ](https://www.eclipse.org/downloads/)
+
+Certifique-se de que o PostgreSQL está em execução e crie um banco de dados chamado "gerenciamento_usuarios". Configure o arquivo `src/main/resources/META-INF/persistence.xml` com as informações de conexão adequadas para o seu ambiente.
+
 ## Configuração do Banco de Dados
 
 1. Certifique-se de que o PostgreSQL está em execução.
