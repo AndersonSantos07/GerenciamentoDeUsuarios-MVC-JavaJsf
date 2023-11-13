@@ -54,12 +54,10 @@ Lembre-se de substituir `"seu_usuario"` e `"sua_senha"` pelos valores corretos d
 
 ## Executando o Projeto
 
-1. Encontre o arquivo `GerenciamentoDeUsuarios.java` no pacote `br.com.teste`.
+1. Certifique-se de que o servidor Tomcat 8.5 ou inferior está configurado corretamente em sua IDE.
 
-2. Execute o arquivo como um aplicativo Java.
+2. Aguarde o servidor iniciar, e a aplicação estará disponível em `http://localhost:8080/meusegundoprojetojsf/`. Certifique-se de que o contexto da aplicação esteja configurado de acordo com o seu ambiente.
 
-3. O servidor embutido será iniciado, e a aplicação estará disponível em `http://localhost:8080/meusegundoprojetojsf/`.
+3. Acesse a aplicação pelo navegador e explore as páginas de registro e listagem de usuários.
 
-4. Acesse a aplicação pelo navegador e explore as páginas de registro e listagem de usuários.
-
-Certifique-se de seguir essas instruções cuidadosamente para garantir uma execução suave do projeto em seu ambiente local. Se encontrar problemas durante o processo, verifique se todos os pré-requisitos foram atendidos e se as configurações do banco de dados estão corretas.
+Certifique-se de seguir essas instruções cuidadosamente para garantir uma execução suave do projeto em seu ambiente local. Se encontrar problemas durante o processo, verifique se todos os pré-requisitos foram atendidos e se as configurações do banco de dados estão corretas. Se necessário, ajuste o contexto da aplicação de acordo com a configuração do seu ambiente de execução no Tomcat.
