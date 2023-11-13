@@ -14,6 +14,12 @@
 
 		<h1>Editar Usuario</h1>
 
+		<p:message for="nomeInput" />
+		<p:message for="sobreNomeInput" />
+		<p:message for="nascimento" />
+		<p:message for="emailInput" />
+		<p:message for="genderSelect" />
+
 		<h:panelGrid columns="2" cellpadding="5">
 
 			<p:outputLabel for="idInput" value="Id: " />
@@ -23,15 +29,20 @@
 
 			<p:outputLabel value="Nome:" for="nomeInput" />
 			<p:inputText id="nomeInput" value="#{editarUsuarioBean.usuario.nome}"
-				required="true" />
+				required="true">
+				<f:validateRegex pattern="^[A-Za-z\s]+$" />
+			</p:inputText>
 
 			<p:outputLabel value="Sobrenome:" for="sobreNomeInput" />
 			<p:inputText id="sobreNomeInput"
-				value="#{editarUsuarioBean.usuario.sobrenome}" required="true" />
+				value="#{editarUsuarioBean.usuario.sobrenome}" required="true">
+				<f:validateRegex pattern="^[A-Za-z\s]+$" />
+			</p:inputText>
 
 			<p:outputLabel for="nascimento" value="Nascimento: " />
 			<p:calendar id="nascimento"
-				value="#{editarUsuarioBean.usuario.dataNascimento}" required="true" />
+				value="#{editarUsuarioBean.usuario.dataNascimento}" required="true"
+				pattern="dd/MM/yyyy" mask="true" />
 
 			<p:outputLabel value="Email: " for="emailInput" />
 			<p:inputText id="emailInput"
@@ -39,7 +50,6 @@
 				<f:validateRegex
 					pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" />
 			</p:inputText>
-			<p:message for="emailInput" />
 
 			<p:outputLabel for="genderSelect" value="Gênero: " />
 			<p:selectOneRadio id="genderSelect"
