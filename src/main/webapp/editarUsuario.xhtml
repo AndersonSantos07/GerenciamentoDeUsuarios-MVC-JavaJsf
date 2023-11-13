@@ -6,23 +6,30 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
-	<title>Editar</title>
+	<title>Editar Usuário</title>
 	<link rel="stylesheet" type="text/css"
 		href="#{request.contextPath}/resources/css/styles.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/editarUsuario.css" />
 </h:head>
 
 <h:body>
 	<h:form id="formEditarUsuario">
 
-		<h1>Editar Usuario</h1>
+		<div class="container-editar">
 
-		<p:message for="nomeInput" />
-		<p:message for="sobreNomeInput" />
-		<p:message for="nascimento" />
-		<p:message for="emailInput" />
-		<p:message for="genderSelect" />
+			<h1>Editar Usuario</h1>
+			<p:message for="nomeInput" />
+			<p:message for="sobreNomeInput" />
+			<p:message for="nascimento" />
+			<p:message for="emailInput" />
+			<p:message for="genderSelect" />
 
-		<h:panelGrid columns="2" cellpadding="5">
+
+		</div>
+
+
+		<h:panelGrid columns="2" cellpadding="5" class="container-form">
 
 			<p:outputLabel for="idInput" value="Id: " />
 			<p:inputText id="idInput" value="#{editarUsuarioBean.usuario.id}"
@@ -59,9 +66,12 @@
 				<f:selectItem itemLabel="Masculino" itemValue="masculino" />
 				<f:selectItem itemLabel="Feminino" itemValue="feminino" />
 			</p:selectOneRadio>
-
-			<h:commandButton value="Salvar" id="salvar"
-				action="#{editarUsuarioBean.salvarEdicao}" style="padding:10px;" />
+			<div class="buttonCenter">
+				<h:commandButton value="Editar" id="editar"
+					action="#{editarUsuarioBean.salvarEdicao}"
+					style="padding:10px; cursor:pointer; width:90%; font-weigth:bold;font-size:18px"
+					update="formUsuario" />
+			</div>
 
 		</h:panelGrid>
 
