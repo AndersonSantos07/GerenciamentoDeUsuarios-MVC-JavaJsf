@@ -1,3 +1,36 @@
+Entendi, você deseja adicionar uma seção introdutória ao README, fornecendo uma visão geral do projeto, acompanhada por imagens. Aqui está um exemplo de como você pode fazer isso:
+
+# Gerenciamento de Usuários - Projeto JavaJSF
+
+Este projeto é um sistema de gerenciamento de informações de usuários desenvolvido em Java, utilizando tecnologias como Hibernate, JPA, PostgreSQL, JSF e PrimeFaces.
+
+![Imagem 1](./imagens/imagem1.png)
+*Legenda da Imagem 1: Página de Registro de Usuários*
+
+![Imagem 2](./imagens/imagem2.png)
+*Legenda da Imagem 2: Página de Listagem de Usuários*
+
+## Visão Geral
+
+O Gerenciamento de Usuários é uma aplicação fullstack que oferece funcionalidades robustas para o registro, edição, e listagem de informações de usuários. Desenvolvido em Java e utilizando tecnologias populares como Hibernate, JPA, PostgreSQL, JSF e PrimeFaces, o projeto fornece uma solução escalável para o gerenciamento eficiente de dados de usuários.
+
+## Funcionalidades Principais
+
+- **Registro de Usuários:** Adicione novos usuários ao sistema, fornecendo informações como nome, e-mail, telefone e data de nascimento.
+
+- **Listagem de Usuários:** Visualize uma lista completa de usuários registrados, com opções para editar e excluir cada usuário individualmente.
+
+- **Edição de Usuários:** Modifique as informações de usuários existentes, mantendo os dados sempre atualizados.
+
+- **Exclusão de Usuários:** Remova usuários específicos da base de dados com facilidade.
+
+A seção acima fornece uma visão geral do projeto, incluindo imagens que ilustram algumas das principais funcionalidades. Certifique-se de ajustar os caminhos das imagens para refletir a estrutura real do seu repositório.
+
+
+
+
+
+
 # Instruções para Executar o Projeto de Gerenciamento de Usuários - JavaJSF
 
 Este repositório contém um projeto de gerenciamento de informações de usuários desenvolvido em Java, Hibernate, JPA, PostgreSQL, JSF e PrimeFaces. A seguir, são apresentadas as instruções para configurar e executar o projeto em seu computador.
