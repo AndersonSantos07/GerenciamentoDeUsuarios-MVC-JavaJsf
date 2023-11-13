@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<h:head>
+	<title>Usuários</title>
+
+</h:head>
+
+
+<h:body>
+
+	<h:form id="formUsuarios">
+
+		<h1>Usuários</h1>
+
+		<p:dataTable value="#{usuarioBean.pessoas}" var="pessoa"
+			emptyMessage="Não existem usuários cadastrados no momento.">
+			<p:column headerText="Id">
+				<h:outputText value="#{pessoa.id}" />
+			</p:column>
+
+			<p:column headerText="Nome">
+				<h:outputText value="#{pessoa.nome}" />
+			</p:column>
+
+			<p:column headerText="Sobrenome">
+				<h:outputText value="#{pessoa.sobrenome}" />
+			</p:column>
+
+			<p:column headerText="Data de Nascimento">
+				<h:outputText value="#{pessoa.dataNascimento}" />
+			</p:column>
+
+			<p:column headerText="others">
+				<p:commandButton value="Editar"
+					action="#{editarUsuarioBean.carregarUsuarioParaEdicao(pessoa.id)}" />
+				<p:commandButton value="Excluir"
+					action="#{usuarioBean.deletePorId(pessoa.id)}" />
+			</p:column>
+		</p:dataTable>
+
+		<p:commandButton value="Home" id="voltarHome" action="index"
+			style="padding:10px;" />
+		<p:commandButton value="Registrar Usuário" id="voltarRegistro"
+			action="registro" style="padding:10px;" />
+
+
+
+	</h:form>
+
+
+
+
+</h:body>
+
+
+</html>

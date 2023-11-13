@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Editar</title>
+</h:head>
+
+<h:body>
+	<h:form id="formEditarUsuario">
+
+		<h1>Editar Usuario</h1>
+
+		<h:panelGrid columns="2" cellpadding="5">
+
+			<p:outputLabel for="idInput" value="Id: " />
+			<p:inputText id="idInput" value="#{editarUsuarioBean.usuario.id}"
+				readonly="true" />
+
+
+			<p:outputLabel value="Nome:" for="nomeInput" />
+			<p:inputText id="nomeInput" value="#{editarUsuarioBean.usuario.nome}"
+				required="true" />
+
+			<p:outputLabel value="Sobrenome:" for="sobreNomeInput" />
+			<p:inputText id="sobreNomeInput"
+				value="#{editarUsuarioBean.usuario.sobrenome}" required="true" />
+
+			<p:outputLabel for="nascimento" value="Nascimento: " />
+			<p:calendar id="nascimento"
+				value="#{editarUsuarioBean.usuario.dataNascimento}" required="true" />
+
+			<p:outputLabel value="Email: " for="emailInput" />
+			<p:inputText id="emailInput"
+				value="#{editarUsuarioBean.usuario.email}" required="true">
+				<f:validateRegex
+					pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" />
+			</p:inputText>
+			<p:message for="emailInput" />
+
+			<p:outputLabel for="genderSelect" value="Gênero: " />
+			<p:selectOneRadio id="genderSelect"
+				value="#{editarUsuarioBean.usuario.sexo}">
+				<f:selectItem itemLabel="Masculino" itemValue="masculino" />
+				<f:selectItem itemLabel="Feminino" itemValue="feminino" />
+			</p:selectOneRadio>
+
+			<h:commandButton value="Salvar" id="salvar"
+				action="#{editarUsuarioBean.salvarEdicao}" style="padding:10px;" />
+
+		</h:panelGrid>
+
+	</h:form>
+</h:body>
+
+</html>
