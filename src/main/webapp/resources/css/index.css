@@ -5,8 +5,7 @@ body{
 	justify-content: center;
 	flex-direction: center;
 	text-align: center;
-	background: rgb(19,0,36);
-	background: linear-gradient(90deg, rgba(19,0,36,0.804359243697479) 34%, rgba(156,61,161,1) 51%, rgba(0,212,255,1) 90%);}
+}
 
 form{
 	
@@ -20,7 +19,6 @@ form{
 }
 
 .container-home{
-	
 	background: rgb(19,0,36);
 	background: linear-gradient(90deg, rgba(19,0,36,0.28335084033613445) 34%, rgba(156,61,161,0.29175420168067223) 51%, rgba(0,212,255,0.2665441176470589) 90%);
 	display:flex;
@@ -30,15 +28,13 @@ form{
 	width:70%;
 	padding:20px;
 	border-radius: 20px;
-	
-	
-	
 }
 
 .div-buttons{
 	width:50%;
 	display:flex;
 	justify-content: space-around;
+	padding:20px;
 
 }
 

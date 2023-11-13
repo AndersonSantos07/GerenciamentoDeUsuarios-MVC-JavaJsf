@@ -7,5 +7,7 @@ body{
 	margin:0;
 	padding:0;
 	font-family: 'Roboto', Arial;
+	background: rgb(19,0,36);
+	background: linear-gradient(90deg, rgba(19,0,36,0.804359243697479) 34%, rgba(156,61,161,1) 51%, rgba(0,212,255,1) 90%);
 	
 }

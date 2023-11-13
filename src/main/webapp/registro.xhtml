@@ -7,59 +7,87 @@
 
 <h:head>
 	<title>Registro</title>
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/styles.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/registro.css" />
 </h:head>
 
 <h:body>
 	<h:form id="formUsuario">
 
-		<h1>Registro</h1>
-		<p:message for="nomeInput" />
-		<p:message for="sobreNomeInput" />
-		<p:message for="nascimento" />
-		<p:message for="emailInput" />
-		<p:message for="genderSelect" />
+		<div class="container-registro">
+			<div class="content-registro">
+				<h1>Registro</h1>
+				<p:message for="nomeInput" />
+				<p:message for="sobreNomeInput" />
+				<p:message for="nascimento" />
+				<p:message for="emailInput" />
+				<p:message for="genderSelect" />
 
 
-		<h:panelGrid columns="2" cellpadding="5">
-
-			<p:outputLabel value="Nome:" for="nomeInput" />
-			<p:inputText id="nomeInput" value="#{usuarioBean.pessoa.nome}"
-				required="true">
-				<f:validateRegex pattern="^[A-Za-z\s]+$" />
-			</p:inputText>
+			</div>
 
 
-			<p:outputLabel value="Sobrenome:" for="sobreNomeInput" />
-			<p:inputText id="sobreNomeInput"
-				value="#{usuarioBean.pessoa.sobrenome}" required="true">
-				<f:validateRegex pattern="^[A-Za-z\s]+$" />
-			</p:inputText>
 
-			<p:outputLabel for="nascimento" value="Nascimento: " />
-			<p:calendar id="nascimento"
-				value="#{usuarioBean.pessoa.dataNascimento}" required="true"
-				pattern="dd/MM/yyyy" mask="true" />
 
-			<p:outputLabel value="Email: " for="emailInput" />
-			<p:inputText id="emailInput" value="#{usuarioBean.pessoa.email}"
-				required="true">
-				<f:validateRegex
-					pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" />
-			</p:inputText>
 
-			<p:outputLabel for="genderSelect" value="Gênero: " />
-			<p:selectOneRadio id="genderSelect"
-				value="#{usuarioBean.pessoa.sexo}">
-				<f:selectItem itemLabel="Masculino" itemValue="Masculino" />
-				<f:selectItem itemLabel="Feminino" itemValue="Feminino" />
-			</p:selectOneRadio>
+			<h:panelGrid columns="2" cellpadding="5" class="container-form">
 
-			<p:commandButton value="Salvar" id="salvar"
-				action="#{usuarioBean.salvar}" style="padding:10px;" />
-			<p:commandButton value="Voltar" id="retornarHome" action="index?faces-redirect=true"
-				immediate="true" style="padding:10px;" />
+				<p:outputLabel value="Nome:" for="nomeInput" />
+				<p:inputText id="nomeInput" value="#{usuarioBean.pessoa.nome}"
+					required="true">
+					<f:validateRegex pattern="^[A-Za-z\s]+$" />
+				</p:inputText>
 
-		</h:panelGrid>
+				<p:outputLabel value="Sobrenome:" for="sobreNomeInput" />
+				<p:inputText id="sobreNomeInput"
+					value="#{usuarioBean.pessoa.sobrenome}" required="true">
+					<f:validateRegex pattern="^[A-Za-z\s]+$" />
+				</p:inputText>
+
+				<p:outputLabel for="nascimento" value="Nascimento: " />
+				<p:calendar id="nascimento"
+					value="#{usuarioBean.pessoa.dataNascimento}" required="true"
+					pattern="dd/MM/yyyy" mask="true" />
+
+				<p:outputLabel value="Email: " for="emailInput" />
+				<p:inputText id="emailInput" value="#{usuarioBean.pessoa.email}"
+					required="true">
+					<f:validateRegex
+						pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" />
+				</p:inputText>
+
+				<p:outputLabel for="genderSelect" value="Gênero: " />
+				<p:selectOneRadio id="genderSelect"
+					value="#{usuarioBean.pessoa.sexo}">
+					<f:selectItem itemLabel="Masculino" itemValue="Masculino" />
+					<f:selectItem itemLabel="Feminino" itemValue="Feminino" />
+				</p:selectOneRadio>
+
+
+
+				<p:commandButton value="Salvar" id="salvar"
+					action="#{usuarioBean.salvar}" style="padding:10px;"
+					update="formUsuario" />
+				<p:commandButton value="Home" id="retornarHome"
+					action="index?faces-redirect=true" immediate="true"
+					style="padding:10px;" />
+
+
+
+
+
+
+
+
+			</h:panelGrid>
+
+		</div>
+
+
+
+
 
 	</h:form>
 </h:body>

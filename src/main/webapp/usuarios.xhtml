@@ -8,7 +8,10 @@
 
 <h:head>
 	<title>Usuários</title>
-
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/styles.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/usuarios.css" />
 </h:head>
 
 
@@ -25,22 +28,26 @@
 			</p:column>
 
 			<p:column headerText="Nome">
-				<h:outputText value="#{pessoa.nome}" />
+				<h:outputText value="#{pessoa.nome}" class="centered-text" />
 			</p:column>
 
 			<p:column headerText="Sobrenome">
-				<h:outputText value="#{pessoa.sobrenome}" />
+				<h:outputText value="#{pessoa.sobrenome}" class="centered-text" />
+			</p:column>
+
+			<p:column headerText="Email">
+				<h:outputText value="#{pessoa.email}" />
 			</p:column>
 
 			<p:column headerText="Gênero">
-				<h:outputText value="#{pessoa.sexo}" />
+				<h:outputText value="#{pessoa.sexo}" class="centered-text" />
 			</p:column>
 
 			<p:column headerText="Data de Nascimento">
-				<h:outputText value="#{pessoa.dataNascimento}" />
+				<h:outputText value="#{pessoa.dataNascimento}" class="centered-text" />
 			</p:column>
 
-			<p:column headerText="others">
+			<p:column headerText="Outros">
 				<p:commandButton value="Editar"
 					action="#{editarUsuarioBean.carregarUsuarioParaEdicao(pessoa.id)}" />
 				<p:commandButton value="Excluir"
@@ -48,10 +55,15 @@
 			</p:column>
 		</p:dataTable>
 
-		<p:commandButton value="Home" id="voltarHome" action="index"
-			style="padding:10px;" />
-		<p:commandButton value="Registrar Usuário" id="voltarRegistro"
-			action="registro" style="padding:10px;" />
+		<div class="content-button">
+
+			<p:commandButton value="Home" id="voltarHome" action="index"
+				style="padding:10px;" />
+			<p:commandButton value="Novo Usuário" id="voltarRegistro"
+				action="registro" style="padding:10px;" />
+
+		</div>
+
 
 
 
