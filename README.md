@@ -40,6 +40,12 @@ Certifique-se de que o PostgreSQL está em execução e crie um banco de dados c
 
 Lembre-se de substituir `"seu_usuario"` e `"sua_senha"` pelos valores corretos do seu usuário e senha do PostgreSQL.
 
+## Teste Banco de Dados(opcional)
+
+1.Encontre o arquivo GerenciamentoDeUsuarios.java em src/test/java no pacote br.com.teste.
+
+2.Execute como aplicativo Java, para criar a tabela no banco de dados como teste.
+
 ## Configuração do Projeto
 
 1. Clone este repositório para o seu ambiente local:
