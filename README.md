@@ -4,11 +4,11 @@ Este projeto é um sistema de gerenciamento de informações de usuários desenv
 
 ![Imagem 1](./registrousuarios.PNG)
 <br />
-*Legenda da Imagem 1: Página de Registro de Usuários*
+*Página de Registro de Usuários*
 
 ![Imagem 2](./paginausuarios.PNG)
 <br />
-*Legenda da Imagem 2: Página de Listagem de Usuários*
+*Página de Listagem de Usuários*
 
 ## Visão Geral
 
