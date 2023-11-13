@@ -8,24 +8,35 @@
 
 <h:head>
 	<title>Home</title>
-	<h:outputStylesheet library="css" name="styles.css" />
-
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/styles.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/index.css" />
 </h:head>
 
 
 <h:body>
 	<h:form id="homeForm">
+		<div class="container-home">
+			<div>
+				<h1>Gerenciador de Usuários</h1>
+				<p>Bem-Vindo ao sistema de gerenciamento de usuários, onde você
+					pode cadastrar informações do usuário, editar essas mesmas
+					informações e listar todos os usuários criados!</p>
+				<p>Clique em um dos botões e comece a utilzar nosso sistema de
+					gerenciamento de usuários!</p>
+			</div>
 
-		<h1>Home</h1>
-		<p>Bem-Vindo ao sistema de gerenciamento de usuários, onde você
-			pode cadastrar informações do usuário, editar essas mesmas
-			informações e listar todos os usuários criados!</p>
-		<p>Clique no botão e comece a utilzar nosso sistema de
-			gerenciamento de usuários!</p>
-		<p:commandButton value="Cadastrar Usuário" id="irRegistro"
-			action="registro" style="padding:10px;" />
-		<p:commandButton value="Lista de Usuários" id="irUsuarios"
-			action="usuarios" style="padding:10px;" />
+
+			<div class="div-buttons">
+				<p:commandButton value="Cadastrar Usuário" id="irRegistro"
+					action="registro" style="padding:10px;" />
+				<p:commandButton value="Lista de Usuários" id="irUsuarios"
+					action="usuarios" style="padding:10px;" />
+			</div>
+		</div>
+
+
 
 	</h:form>
 

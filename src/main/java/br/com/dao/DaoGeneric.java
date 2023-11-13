@@ -4,11 +4,8 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
-
-import org.hibernate.engine.spi.ExecuteUpdateResultCheckStyle;
-
 import br.com.jpautil.JPAUtil;
-import br.com.model.Usuario;
+
 
 public class DaoGeneric<T> {
 

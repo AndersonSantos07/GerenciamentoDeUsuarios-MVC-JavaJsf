@@ -1,4 +1,4 @@
-package br.com.cursojsf;
+package br.com.teste;
 
 import javax.persistence.Persistence;
 
