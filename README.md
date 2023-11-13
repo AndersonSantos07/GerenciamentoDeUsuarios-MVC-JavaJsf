@@ -2,10 +2,10 @@
 
 Este projeto é um sistema de gerenciamento de informações de usuários desenvolvido em Java, utilizando tecnologias como Hibernate, JPA, PostgreSQL, JSF e PrimeFaces.
 
-![Imagem 1](./imagens/imagem1.png)
+![Imagem 1](./registrousuarios.PNG)
 *Legenda da Imagem 1: Página de Registro de Usuários*
 
-![Imagem 2](./imagens/imagem2.png)
+![Imagem 2](./paginausuarios.PNG)
 *Legenda da Imagem 2: Página de Listagem de Usuários*
 
 ## Visão Geral
