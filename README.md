@@ -1,5 +1,3 @@
-Entendi, você deseja adicionar uma seção introdutória ao README, fornecendo uma visão geral do projeto, acompanhada por imagens. Aqui está um exemplo de como você pode fazer isso:
-
 # Gerenciamento de Usuários - Projeto JavaJSF
 
 Este projeto é um sistema de gerenciamento de informações de usuários desenvolvido em Java, utilizando tecnologias como Hibernate, JPA, PostgreSQL, JSF e PrimeFaces.
